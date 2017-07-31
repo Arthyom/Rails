@@ -1,0 +1,29 @@
+<h1>Crear un Post</h1>
+
+<%= form_for :postNuevo , url: publicaciones_path , method: :post do |p| %>
+
+    <div>
+        <%= p.label 'Titulo del Post' %>
+        <%= p.text_field :titulo %>
+    </div>
+
+    <div>
+        <%= p.label 'Autor del Post' %>
+        <%= p.text_field :autor %>
+    </div>
+
+    <div>
+        <%= p.label 'Cuerpo del Post' %>
+        <%= p.text_area :cuerpo %>
+    </div>
+
+    <div>
+        <%= p.label 'Fecha del Post' %>
+        <%= p.date_field :fecha %>
+    </div>
+
+    <div>
+        <%= button_to 'Guardar'  %>
+    </div>
+
+<%end %>

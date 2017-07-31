@@ -1,0 +1,23 @@
+<h1>Bienvenido a <%= @titulo %></h1>
+<table border='1'>
+    <tr>
+        <th> Contenido </th>
+        <th>Opciones de Post</th>
+    </tr>
+
+    <%@listaPublicaciones.each do |p| %>
+        <tr>
+            <td>
+                <div> <h4>Titulo: <%= p.titulo %> ( <%= p.fecha %> )</h4></div>
+                <div><p><%= p.cuerpo %></p></div>
+                <div> Autor: <strong><%= p.autor %> </strong> </div>
+            </td>
+            <td>
+                <%= link_to 'Ver Post', publicacione_path(p) %>
+                <%= link_to 'Editar', edit_publicacione_path(p) %>
+                <%= link_to 'Borrar', publicacione_path(p), method: :delete , :data=>{:confirm=>'Desea Borrar El Post'}%>
+            </td>
+        </tr>
+    <%end %>
+</table>
+<%= link_to 'Nuevo Post', new_publicacione_path %>
