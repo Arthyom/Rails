@@ -1,0 +1,22 @@
+<div class='jumbotron'>
+    <h3>Vamos a editar <%= @formAct.nombre %></h3>
+</div>
+<%= form_for :formAct, url: usuario_path(@formAct), :method =>  :patch, class:'form-horizontal' do |f| %>
+<div class='form-group'>
+    <%= f.label 'Nombre', :class=>'control-label' %>
+    <%= f.text_field :nombre,:class=>'form-control'  %>
+</div>
+
+<div class='form-group'>  
+    <%= f.label 'Precio', :class=>'control-label' %>
+    <%= f.text_field :precio, :class=>'form-control'  %>
+</div>
+
+<div class='form-group'>
+    <%= f.label 'Existencia',:class=>'control-label'  %>
+    <%= f.text_field :existencia ,:class=>'form-control'  %>
+</div>
+<div class='form-group'>
+    <%= f.submit 'Actualizar',:class=>'btn btn-lg btn-primary'  %>
+</div>
+<%end%>
