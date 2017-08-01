@@ -1,7 +1,19 @@
 <div>   
-    <h2> Titulo del Post :  <i> <%= @postReview.titulo %> </i></h2>
-    <p><%= @postReview.cuerpo %></p>
+    <div class='jumbotron'>
+        <h2> Titulo del Post :  <strong><i> <%= @postReview.titulo %> </i></strong></h2>
+    </div>
+    <div class='row'>
+        <div class='col-md-5'>
+            <%= image_tag @postReview.imagen, class:'img-responsive' , size:'500x500' %>
+        </div>
+        <p class='col-md-7 text-justify'>
+            <%= @postReview.cuerpo %>
+        </p>
+    </div>
+   
+    <div class='row'>
+        <h4 class='col-md-6'> Autor : <strong><i><%= @postReview.autor %></i></strong></h4>    
+        <h4 class='col-md-6 text-right'>Fecha :  <strong><i><%= @postReview.fecha %></i></strong></h4>
+    </div>
 
-    <h3> Autor : <i><%= @postReview.autor %></i> </h3>
-    <h4>Fecha <i><%= @postReview.fecha %></i></h4>
 </div>

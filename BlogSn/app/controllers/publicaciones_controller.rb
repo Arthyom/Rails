@@ -1,7 +1,7 @@
 class PublicacionesController < ApplicationController
   def index
     @listaPublicaciones = Post.all
-    @titulo = 'Index'
+    @titulo = "la Lista de Post's"
   end
 
   def new
@@ -34,11 +34,7 @@ class PublicacionesController < ApplicationController
 
   def update
     @postEdit = Post.find( params[:id] )
-    @fotoname = params[:postEdit][:imagen].original_filename
-    
     @postEdit.update(permitirParametrosEdit)
-
-
     redirect_to index_path
   end
 

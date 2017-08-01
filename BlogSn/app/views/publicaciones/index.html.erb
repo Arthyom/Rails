@@ -1,17 +1,17 @@
 <h1>Bienvenido a <%= @titulo %></h1>
-<table border='1'>
-    <tr>
-        <th> Contenido </th>
-        <th>Opciones de Post</th>
+<table  class =' table table-striped table table-hover'>
+    <tr class='row'>
+        <th colspan='3'> Contenido </th>
+       
     </tr>
 
     <%@listaPublicaciones.each do |p| %>
-        <tr>
-            <td>
+        <tr class='row'>
+            <td class='col-md-2'>
                 <div>
                     <%begin %>
                         <% if not p.imagen.empty? %>
-                            <%= image_tag p.imagen, :size=> '100x100' %>
+                            <%= image_tag p.imagen, :size=> '200x200', class:'img-thumbnail'%>
                         <%else %>
                             <p>Imagen vacia</p>
                         <%end %>
@@ -21,15 +21,15 @@
                     <%end %>
                 </div>
             </td>
-            <td>
-                <div> <h4>Titulo: <%= p.titulo %> ( <%= p.fecha %> )</h4></div>
-                <div><p><%= p.cuerpo %></p></div>
+            <td class='col-md-9'>
+                <div> <h4>Titulo: <strong><i><%= p.titulo + '  '%></i></strong>( <%= p.fecha %> )</h4></div>
+                <div class='text-justify'><p><%= p.cuerpo %></p></div>
                 <div> Autor: <strong><%= p.autor %> </strong> </div>
             </td>
-            <td>
-                <%= link_to 'Ver Post', publicacione_path(p) %>
-                <%= link_to 'Editar', edit_publicacione_path(p) %>
-                <%= link_to 'Borrar', publicacione_path(p), method: :delete , :data=>{:confirm=>'Desea Borrar El Post'}%>
+            <td class='center-block'>
+                <%= link_to 'Ver Post', publicacione_path(p) , class:'btn btn-block btn-default'%>
+                <%= link_to 'Editar', edit_publicacione_path(p) ,class:'btn btn-block btn-warning'%>
+                <%= link_to 'Borrar', publicacione_path(p), class:'btn btn-block btn-danger' ,method: :delete , :data=>{:confirm=>'Desea Borrar El Post'}%>
             </td>
         </tr>
     <%end %>

@@ -417,7 +417,7 @@
 
 <span class='kw'>def</span> <span class='id identifier rubyid_index'>index</span>
   <span class='ivar'>@listaPublicaciones</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Post.html" title="Post (class)">Post</a></span></span><span class='period'>.</span><span class='id identifier rubyid_all'>all</span>
-  <span class='ivar'>@titulo</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Index</span><span class='tstring_end'>&#39;</span></span>
+  <span class='ivar'>@titulo</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>la Lista de Post&#39;s</span><span class='tstring_end'>&quot;</span></span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -505,22 +505,14 @@
 36
 37
 38
-39
-40
-41
-42
-43</pre>
+39</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'app/controllers/publicaciones_controller.rb', line 35</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update'>update</span>
   <span class='ivar'>@postEdit</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Post.html" title="Post (class)">Post</a></span></span><span class='period'>.</span><span class='id identifier rubyid_find'>find</span><span class='lparen'>(</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:id</span><span class='rbracket'>]</span> <span class='rparen'>)</span>
-  <span class='ivar'>@fotoname</span> <span class='op'>=</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:postEdit</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='symbol'>:imagen</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_original_filename'>original_filename</span>
-  
   <span class='ivar'>@postEdit</span><span class='period'>.</span><span class='id identifier rubyid_update'>update</span><span class='lparen'>(</span><span class='id identifier rubyid_permitirParametrosEdit'>permitirParametrosEdit</span><span class='rparen'>)</span>
-
-
   <span class='id identifier rubyid_redirect_to'>redirect_to</span> <span class='id identifier rubyid_index_path'>index_path</span>
 <span class='kw'>end</span></pre>
     </td>
@@ -533,7 +525,7 @@
 </div>
 
       <div id="footer">
-  Generated on Mon Jul 31 23:30:57 2017 by
+  Generated on Tue Aug  1 02:18:04 2017 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.9 (ruby-2.3.3).
 </div>
