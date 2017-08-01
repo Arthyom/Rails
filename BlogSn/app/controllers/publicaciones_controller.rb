@@ -9,7 +9,9 @@ class PublicacionesController < ApplicationController
   end
 
   def create
-    @nuevoPost = Post.new( permitirParametrosNew)
+    @fotoname = params[:postNuevo][:imagen].original_filename
+    @nuevoPost = Post.new( permitirParametrosNew )
+    @nuevoPost.imagen = @fotoname
     @nuevoPost.save
     redirect_to index_path
   end
@@ -20,6 +22,8 @@ class PublicacionesController < ApplicationController
   end
 
   def show
+    @postReview = Post.find( params[:id] )
+    
   end
 
   def destroy
@@ -30,7 +34,11 @@ class PublicacionesController < ApplicationController
 
   def update
     @postEdit = Post.find( params[:id] )
+    @fotoname = params[:postEdit][:imagen].original_filename
+    
     @postEdit.update(permitirParametrosEdit)
+
+
     redirect_to index_path
   end
 

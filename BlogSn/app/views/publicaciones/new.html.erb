@@ -8,9 +8,18 @@
     </div>
 
     <div>
+        <%= p.label 'Imagen' %>
+        <br>
+        <%= p.file_field :imagen %>
+       
+    </div>
+
+    <div>
         <%= p.label 'Autor del Post' %>
         <%= p.text_field :autor %>
     </div>
+
+
 
     <div>
         <%= p.label 'Cuerpo del Post' %>

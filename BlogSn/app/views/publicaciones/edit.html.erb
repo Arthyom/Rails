@@ -1,6 +1,18 @@
 <h1>Editar un Post</h1>
-
+<% @imgName = @postEdit.imagen %>
 <%= form_for :postEdit, :url=>publicacione_path , method: :patch do |p| %>
+    <div>
+        <%= p.label 'Titulo del Post' %>
+        <%= p.text_field :titulo %>
+    </div>
+
+    <%begin %>
+        <%= image_tag @imgName, :size => '100x100' , alt: 'Imagen vacia' %>
+    <%rescue %>
+        <p>No hay imagens</p>
+    <%end %>
+        
+    <%= p.file_field :imagen%>
 
     <div>
         <%= p.label 'Titulo del Post' %>

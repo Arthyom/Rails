@@ -8,6 +8,20 @@
     <%@listaPublicaciones.each do |p| %>
         <tr>
             <td>
+                <div>
+                    <%begin %>
+                        <% if not p.imagen.empty? %>
+                            <%= image_tag p.imagen, :size=> '100x100' %>
+                        <%else %>
+                            <p>Imagen vacia</p>
+                        <%end %>
+                    <%rescue %>
+                        <p>Imagen vacia</p>
+                        <% p.imagen = 'imagen vacia' %>
+                    <%end %>
+                </div>
+            </td>
+            <td>
                 <div> <h4>Titulo: <%= p.titulo %> ( <%= p.fecha %> )</h4></div>
                 <div><p><%= p.cuerpo %></p></div>
                 <div> Autor: <strong><%= p.autor %> </strong> </div>

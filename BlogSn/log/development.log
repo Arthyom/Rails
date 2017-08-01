@@ -1831,3 +1831,1611 @@ Processing by PublicacionesController#show as HTML
 Completed 200 OK in 337ms (Views: 73.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-07-31 18:53:13 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (71.1ms)
+Completed 200 OK in 797ms (Views: 765.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/publicaciones/1" for 127.0.0.1 at 2017-07-31 18:53:17 -0500
+Processing by PublicacionesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering publicaciones/show.html.erb within layouts/application
+  Rendered publicaciones/show.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 104ms (Views: 73.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/publicaciones/1" for 127.0.0.1 at 2017-07-31 18:54:35 -0500
+Processing by PublicacionesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering publicaciones/show.html.erb within layouts/application
+  Rendered publicaciones/show.html.erb within layouts/application (513.3ms)
+Completed 500 Internal Server Error in 531ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `text_field_tag' for #<ActionView::Helpers::FormBuilder:0x00558ef9d19740>
+Did you mean?  text_field):
+    4: <%= form_for :postReview do |p| %>
+    5: 
+    6:     <div>
+    7:         <%= p.text_field_tag 'Titulo ', :Titulo %>
+    8:     </div>
+    9: 
+   10:     <div>
+  
+app/views/publicaciones/show.html.erb:7:in `block in _app_views_publicaciones_show_html_erb___1539575076146876967_47036283032860'
+app/views/publicaciones/show.html.erb:4:in `_app_views_publicaciones_show_html_erb___1539575076146876967_47036283032860'
+Started GET "/publicaciones/1" for 127.0.0.1 at 2017-07-31 18:55:46 -0500
+Processing by PublicacionesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering publicaciones/show.html.erb within layouts/application
+  Rendered publicaciones/show.html.erb within layouts/application (370.6ms)
+Completed 500 Internal Server Error in 391ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `titulo' for #<ActionView::Helpers::FormBuilder:0x007f4e7802af58>):
+    4: <%= form_for :postReview do |p| %>
+    5: 
+    6:     <div>
+    7:         <%= p.label 'Titulo ', p.titulo%>
+    8:     </div>
+    9: 
+   10:     <div>
+  
+app/views/publicaciones/show.html.erb:7:in `block in _app_views_publicaciones_show_html_erb___1539575076146876967_69987551599860'
+app/views/publicaciones/show.html.erb:4:in `_app_views_publicaciones_show_html_erb___1539575076146876967_69987551599860'
+Started GET "/" for 127.0.0.1 at 2017-07-31 19:01:25 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (39.1ms)
+Completed 200 OK in 90ms (Views: 82.0ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/publicaciones/1" for 127.0.0.1 at 2017-07-31 19:01:28 -0500
+Processing by PublicacionesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering publicaciones/show.html.erb within layouts/application
+  Rendered publicaciones/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 88ms (Views: 77.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/publicaciones/1" for 127.0.0.1 at 2017-07-31 19:02:39 -0500
+Processing by PublicacionesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering publicaciones/show.html.erb within layouts/application
+  Rendered publicaciones/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 48ms (Views: 43.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/publicaciones/1" for 127.0.0.1 at 2017-07-31 19:03:07 -0500
+Processing by PublicacionesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering publicaciones/show.html.erb within layouts/application
+  Rendered publicaciones/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 75ms (Views: 67.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/publicaciones/1" for 127.0.0.1 at 2017-07-31 19:03:58 -0500
+Processing by PublicacionesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering publicaciones/show.html.erb within layouts/application
+  Rendered publicaciones/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 61ms (Views: 57.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/publicaciones/1" for 127.0.0.1 at 2017-07-31 19:04:20 -0500
+Processing by PublicacionesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering publicaciones/show.html.erb within layouts/application
+  Rendered publicaciones/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 71ms (Views: 64.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/publicaciones/1" for 127.0.0.1 at 2017-07-31 19:05:03 -0500
+Processing by PublicacionesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering publicaciones/show.html.erb within layouts/application
+  Rendered publicaciones/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 69ms (Views: 62.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/publicaciones/1" for 127.0.0.1 at 2017-07-31 19:05:41 -0500
+Processing by PublicacionesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering publicaciones/show.html.erb within layouts/application
+  Rendered publicaciones/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 56ms (Views: 49.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/publicaciones/1" for 127.0.0.1 at 2017-07-31 19:06:12 -0500
+Processing by PublicacionesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering publicaciones/show.html.erb within layouts/application
+  Rendered publicaciones/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 69ms (Views: 64.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/publicaciones/1" for 127.0.0.1 at 2017-07-31 19:06:58 -0500
+Processing by PublicacionesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering publicaciones/show.html.erb within layouts/application
+  Rendered publicaciones/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 61ms (Views: 55.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/publicaciones/1" for 127.0.0.1 at 2017-07-31 19:07:44 -0500
+Processing by PublicacionesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering publicaciones/show.html.erb within layouts/application
+  Rendered publicaciones/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 63ms (Views: 54.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-31 20:23:55 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (2.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 46ms (Views: 41.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/publicaciones/new" for 127.0.0.1 at 2017-07-31 20:23:59 -0500
+Processing by PublicacionesController#new as HTML
+  Rendering publicaciones/new.html.erb within layouts/application
+  Rendered publicaciones/new.html.erb within layouts/application (27.8ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1..2)):
+     9: 
+    10:     <div>
+    11:         <%= p.label 'Imagen' %>
+    12:         <%= p.file_field %>
+    13:     </div>
+    14: 
+    15:     <div>
+  
+app/views/publicaciones/new.html.erb:12:in `block in _app_views_publicaciones_new_html_erb__4184961552659021377_69987467158540'
+app/views/publicaciones/new.html.erb:3:in `_app_views_publicaciones_new_html_erb__4184961552659021377_69987467158540'
+Started GET "/publicaciones/new" for 127.0.0.1 at 2017-07-31 20:24:19 -0500
+Processing by PublicacionesController#new as HTML
+  Rendering publicaciones/new.html.erb within layouts/application
+  Rendered publicaciones/new.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 84ms (Views: 81.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/publicaciones/new" for 127.0.0.1 at 2017-07-31 20:27:09 -0500
+Processing by PublicacionesController#new as HTML
+  Rendering publicaciones/new.html.erb within layouts/application
+  Rendered publicaciones/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 68ms (Views: 65.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-31 20:32:00 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (31.7ms)
+Completed 200 OK in 84ms (Views: 75.5ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/publicaciones/new" for 127.0.0.1 at 2017-07-31 20:32:05 -0500
+Processing by PublicacionesController#new as HTML
+  Rendering publicaciones/new.html.erb within layouts/application
+  Rendered publicaciones/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 49ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/publicaciones" for 127.0.0.1 at 2017-07-31 20:32:33 -0500
+Processing by PublicacionesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vVM8ffT/C9Wo/MXgQBIzlY4qp1Eux+aKtMd3soDr4dLRbRPMB52cXkwpEoldm8z6lOPK59MuxtoMp/kTFv7jcw==", "postNuevo"=>{"titulo"=>"cuarto post", "imagen"=>#<ActionDispatch::Http::UploadedFile:0x007f4e7ebe6e90 @tempfile=#<Tempfile:/tmp/RackMultipart20170731-26743-fsaahk.jpeg>, @original_filename="v6.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"postNuevo[imagen]\"; filename=\"v6.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "autor"=>"frodo", "cuerpo"=>"cuerpo", "fecha"=>"2017-03-02"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.2) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.2) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.2) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.2) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.2) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.2) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.2) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-07-31 20:33:44 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 77ms (Views: 73.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/publicaciones/new" for 127.0.0.1 at 2017-07-31 20:33:49 -0500
+Processing by PublicacionesController#new as HTML
+  Rendering publicaciones/new.html.erb within layouts/application
+  Rendered publicaciones/new.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1..2)):
+    10:     <div>
+    11:         <%= p.label 'Imagen' %>
+    12:         <br>
+    13:         <%= p.file_field.original_filename :imagen %>
+    14:     </div>
+    15: 
+    16:     <div>
+  
+app/views/publicaciones/new.html.erb:13:in `block in _app_views_publicaciones_new_html_erb__4184961552659021377_69987469174320'
+app/views/publicaciones/new.html.erb:3:in `_app_views_publicaciones_new_html_erb__4184961552659021377_69987469174320'
+Started GET "/" for 127.0.0.1 at 2017-07-31 20:41:43 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (34.8ms)
+Completed 200 OK in 91ms (Views: 80.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/publicaciones/new" for 127.0.0.1 at 2017-07-31 20:41:48 -0500
+Processing by PublicacionesController#new as HTML
+  Rendering publicaciones/new.html.erb within layouts/application
+  Rendered publicaciones/new.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1..2)):
+    10:     <div>
+    11:         <%= p.label 'Imagen' %>
+    12:         <br>
+    13:         <%= p.file_field.original_filename :imagen %>
+    14:     </div>
+    15: 
+    16:     <div>
+  
+app/views/publicaciones/new.html.erb:13:in `block in _app_views_publicaciones_new_html_erb__4184961552659021377_69987542585940'
+app/views/publicaciones/new.html.erb:3:in `_app_views_publicaciones_new_html_erb__4184961552659021377_69987542585940'
+Started GET "/publicaciones/new" for 127.0.0.1 at 2017-07-31 20:42:01 -0500
+Processing by PublicacionesController#new as HTML
+  Rendering publicaciones/new.html.erb within layouts/application
+  Rendered publicaciones/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 62ms (Views: 59.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-31 20:42:52 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 46ms (Views: 43.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/publicaciones/new" for 127.0.0.1 at 2017-07-31 20:43:00 -0500
+Processing by PublicacionesController#new as HTML
+  Rendering publicaciones/new.html.erb within layouts/application
+  Rendered publicaciones/new.html.erb within layouts/application (13.4ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "imagen" is not present in the asset pipeline.):
+    11:         <%= p.label 'Imagen' %>
+    12:         <br>
+    13:         <%= p.file_field :imagen %>
+    14:         <%= image_tag :imagen %>
+    15:     </div>
+    16: 
+    17:     <div>
+  
+app/views/publicaciones/new.html.erb:14:in `block in _app_views_publicaciones_new_html_erb__4184961552659021377_69987734261980'
+app/views/publicaciones/new.html.erb:3:in `_app_views_publicaciones_new_html_erb__4184961552659021377_69987734261980'
+Started GET "/" for 127.0.0.1 at 2017-07-31 20:43:58 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 72ms (Views: 69.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/publicaciones/new" for 127.0.0.1 at 2017-07-31 20:44:01 -0500
+Processing by PublicacionesController#new as HTML
+  Rendering publicaciones/new.html.erb within layouts/application
+  Rendered publicaciones/new.html.erb within layouts/application (12.0ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    11:         <%= p.label 'Imagen' %>
+    12:         <br>
+    13:         <%= p.file_field :imagen %>
+    14:         <%= image_tag params[:formNuevo][:imagen] %>
+    15:     </div>
+    16: 
+    17:     <div>
+  
+app/views/publicaciones/new.html.erb:14:in `block in _app_views_publicaciones_new_html_erb__4184961552659021377_69987471773200'
+app/views/publicaciones/new.html.erb:3:in `_app_views_publicaciones_new_html_erb__4184961552659021377_69987471773200'
+Started GET "/publicaciones/new" for 127.0.0.1 at 2017-07-31 20:44:23 -0500
+Processing by PublicacionesController#new as HTML
+  Rendering publicaciones/new.html.erb within layouts/application
+  Rendered publicaciones/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 62ms (Views: 59.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/publicaciones" for 127.0.0.1 at 2017-07-31 20:44:46 -0500
+Processing by PublicacionesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WTJllyZs3YI5UZmrM01GZbs9wUSsJrKzpXspEwj4yMkULNMDtMepT8w1kzk7RSD3xVU2TfTRxnixlHDDzOw8pg==", "postNuevo"=>{"titulo"=>"Cuerto post", "imagen"=>#<ActionDispatch::Http::UploadedFile:0x007f4e7effa608 @tempfile=#<Tempfile:/tmp/RackMultipart20170731-26743-14eeblx.jpeg>, @original_filename="v4.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"postNuevo[imagen]\"; filename=\"v4.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "autor"=>"frodo", "cuerpo"=>"post 4", "fecha"=>"2017-07-26"}}
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `image=' for #<Post:0x007f4e7efdbc30>
+Did you mean?  imagen=
+               imagen
+               imagen?):
+  
+app/controllers/publicaciones_controller.rb:14:in `create'
+Started POST "/publicaciones" for 127.0.0.1 at 2017-07-31 20:45:18 -0500
+Processing by PublicacionesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WTJllyZs3YI5UZmrM01GZbs9wUSsJrKzpXspEwj4yMkULNMDtMepT8w1kzk7RSD3xVU2TfTRxnixlHDDzOw8pg==", "postNuevo"=>{"titulo"=>"Cuerto post", "imagen"=>#<ActionDispatch::Http::UploadedFile:0x007f4e744bf630 @tempfile=#<Tempfile:/tmp/RackMultipart20170731-26743-hv52my.jpeg>, @original_filename="v4.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"postNuevo[imagen]\"; filename=\"v4.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "autor"=>"frodo", "cuerpo"=>"post 4", "fecha"=>"2017-07-26"}}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "posts" ("titulo", "autor", "cuerpo", "imagen", "fecha", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["titulo", "Cuerto post"], ["autor", "frodo"], ["cuerpo", "post 4"], ["imagen", "v4.jpeg"], ["fecha", "2017-07-26"], ["created_at", "2017-08-01 01:45:18.481444"], ["updated_at", "2017-08-01 01:45:18.481444"]]
+  [1m[35m (126.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 175ms (ActiveRecord: 129.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-31 20:45:18 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 79ms (Views: 74.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-31 20:50:33 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 87ms (Views: 83.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-31 20:52:36 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (11.2ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (The asset "no hay" is not present in the asset pipeline.):
+    10:             <td>
+    11:                 <div>
+    12:                     <% if not p.imagen.empty? %>
+    13:                         <%= image_tag p.imagen %>
+    14:                     <%else %>
+    15:                         <p>Imagen vacia</p>
+    16:                     <%end %>
+  
+app/views/publicaciones/index.html.erb:13:in `block in _app_views_publicaciones_index_html_erb___2161653513287086551_69987498773500'
+app/views/publicaciones/index.html.erb:8:in `_app_views_publicaciones_index_html_erb___2161653513287086551_69987498773500'
+Started GET "/" for 127.0.0.1 at 2017-07-31 20:53:51 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (10.1ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (The asset "no hay" is not present in the asset pipeline.):
+    10:             <td>
+    11:                 <div>
+    12:                     <% if not p.imagen.empty? %>
+    13:                         <%= image_tag p.imagen %>
+    14:                     <%else %>
+    15:                         <p>Imagen vacia</p>
+    16:                     <%end %>
+  
+app/views/publicaciones/index.html.erb:13:in `block in _app_views_publicaciones_index_html_erb___2161653513287086551_47036274437120'
+app/views/publicaciones/index.html.erb:8:in `_app_views_publicaciones_index_html_erb___2161653513287086551_47036274437120'
+Started GET "/publicaciones/new" for 127.0.0.1 at 2017-07-31 20:55:45 -0500
+Processing by PublicacionesController#new as HTML
+  Rendering publicaciones/new.html.erb within layouts/application
+  Rendered publicaciones/new.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 141ms (Views: 126.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-31 20:55:51 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 69ms (Views: 66.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-31 20:57:12 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  Rendered publicaciones/index.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/frodo/Documentos/Rails/BlogSn/app/views/publicaciones/index.html.erb:14: syntax error, unexpected tSTRING_BEG, expecting ')'
+...d=( image_tag p.imagen, :size '100x100' );@output_buffer.saf...
+...                               ^):
+  
+app/views/publicaciones/index.html.erb:14: syntax error, unexpected tSTRING_BEG, expecting ')'
+Started GET "/" for 127.0.0.1 at 2017-07-31 20:57:28 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 89ms (Views: 84.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-31 20:58:11 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 85ms (Views: 81.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-31 20:58:42 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 108ms (Views: 102.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/publicaciones/new" for 127.0.0.1 at 2017-07-31 20:59:03 -0500
+Processing by PublicacionesController#new as HTML
+  Rendering publicaciones/new.html.erb within layouts/application
+  Rendered publicaciones/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 69ms (Views: 66.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/publicaciones" for 127.0.0.1 at 2017-07-31 20:59:35 -0500
+Processing by PublicacionesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eM5GM4HPb6vOc1gEoaxx0yahbrCY4n4O1aPzd3P3bH8U8GmCcq34ICqmj228JY68PGgDBmULXl5tw33W5eJu3g==", "postNuevo"=>{"titulo"=>"Otro post", "imagen"=>#<ActionDispatch::Http::UploadedFile:0x007f4e7f027b80 @tempfile=#<Tempfile:/tmp/RackMultipart20170731-26743-1bb44xn.jpeg>, @original_filename="v8.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"postNuevo[imagen]\"; filename=\"v8.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "autor"=>"ichy", "cuerpo"=>"cuerpo", "fecha"=>"2017-08-05"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.2) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.2) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.2) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.2) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.2) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.2) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.2) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/publicaciones" for 127.0.0.1 at 2017-07-31 20:59:46 -0500
+Processing by PublicacionesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/OVZoRiLHFxADWPl1NyxoQzjrvGcpVKBVAGIpaQ2Diux++81iiBokbVpaXfc1NczcotZ+MRSJkpA7tF1YCL6RA==", "postNuevo"=>{"titulo"=>"Otro post", "imagen"=>#<ActionDispatch::Http::UploadedFile:0x007f4e797c38b8 @tempfile=#<Tempfile:/tmp/RackMultipart20170731-26743-hpcjn3.jpeg>, @original_filename="v8.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"postNuevo[imagen]\"; filename=\"v8.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "autor"=>"ichy", "cuerpo"=>"cuerpo", "fecha"=>"2017-08-09"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (8.8ms)[0m  [1m[32mINSERT INTO "posts" ("titulo", "autor", "cuerpo", "imagen", "fecha", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["titulo", "Otro post"], ["autor", "ichy"], ["cuerpo", "cuerpo"], ["imagen", "v8.jpeg"], ["fecha", "2017-08-09"], ["created_at", "2017-08-01 01:59:46.393947"], ["updated_at", "2017-08-01 01:59:46.393947"]]
+  [1m[35m (168.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 189ms (ActiveRecord: 177.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-31 20:59:46 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 66ms (Views: 58.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/publicaciones/1/edit" for 127.0.0.1 at 2017-07-31 21:00:14 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (2.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 80ms (Views: 72.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-31 21:02:40 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 67ms (Views: 60.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/publicaciones/3/edit" for 127.0.0.1 at 2017-07-31 21:02:44 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (293.5ms)
+Completed 500 Internal Server Error in 301ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `imagen=' for #<ActionView::Helpers::FormBuilder:0x007f4e7e08aee8>):
+    12: 
+    13:     <%rescue %>
+    14:         <p>Imagen vacia</p>
+    15:         <% p.imagen = 'imagen vacia' %>
+    16:     <%end %>
+    17: 
+    18:     <div>
+  
+app/views/publicaciones/edit.html.erb:15:in `rescue in block in _app_views_publicaciones_edit_html_erb__3533101862090570494_69987549691940'
+app/views/publicaciones/edit.html.erb:10:in `block in _app_views_publicaciones_edit_html_erb__3533101862090570494_69987549691940'
+app/views/publicaciones/edit.html.erb:3:in `_app_views_publicaciones_edit_html_erb__3533101862090570494_69987549691940'
+Started GET "/publicaciones/3/edit" for 127.0.0.1 at 2017-07-31 21:03:24 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 88ms (Views: 81.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-31 21:03:40 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (4.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 105ms (Views: 98.4ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/publicaciones/3/edit" for 127.0.0.1 at 2017-07-31 21:03:44 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 82ms (Views: 68.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/publicaciones/6/edit" for 127.0.0.1 at 2017-07-31 21:03:57 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 74ms (Views: 67.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/publicaciones/6/edit" for 127.0.0.1 at 2017-07-31 21:04:22 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 82ms (Views: 78.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-31 21:04:26 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 74ms (Views: 69.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/publicaciones/3/edit" for 127.0.0.1 at 2017-07-31 21:04:29 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 82ms (Views: 74.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-31 21:06:12 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 69ms (Views: 65.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/publicaciones/3/edit" for 127.0.0.1 at 2017-07-31 21:06:15 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (9.9ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (The asset "imagen" is not present in the asset pipeline.):
+     8:     </div>
+     9: 
+    10:  
+    11:         <%= image_tag :imagen, :size=> '100x100' %>
+    12:   
+    13:     <div>
+    14:         <%= p.label 'Titulo del Post' %>
+  
+app/views/publicaciones/edit.html.erb:11:in `block in _app_views_publicaciones_edit_html_erb__3533101862090570494_69987540743680'
+app/views/publicaciones/edit.html.erb:3:in `_app_views_publicaciones_edit_html_erb__3533101862090570494_69987540743680'
+Started GET "/" for 127.0.0.1 at 2017-07-31 21:08:51 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (5.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 88ms (Views: 77.3ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/publicaciones/3/edit" for 127.0.0.1 at 2017-07-31 21:08:53 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/home/frodo/Documentos/Rails/BlogSn/app/views/publicaciones/edit.html.erb:11: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
+...utput_buffer.append=( p,image :imagen, :size=> '100x100' );@...
+...                               ^):
+  
+app/views/publicaciones/edit.html.erb:11: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
+Started GET "/publicaciones/3/edit" for 127.0.0.1 at 2017-07-31 21:09:10 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (489.8ms)
+Completed 500 Internal Server Error in 498ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `image' for #<ActionView::Helpers::FormBuilder:0x007f4e9439a078>):
+     8:     </div>
+     9: 
+    10:  
+    11:         <%= p.image :imagen, :size=> '100x100' %>
+    12:   
+    13:     <div>
+    14:         <%= p.label 'Titulo del Post' %>
+  
+app/views/publicaciones/edit.html.erb:11:in `block in _app_views_publicaciones_edit_html_erb__3533101862090570494_69987471080520'
+app/views/publicaciones/edit.html.erb:3:in `_app_views_publicaciones_edit_html_erb__3533101862090570494_69987471080520'
+Started GET "/" for 127.0.0.1 at 2017-07-31 21:16:27 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (26.5ms)
+Completed 200 OK in 82ms (Views: 79.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/publicaciones/3/edit" for 127.0.0.1 at 2017-07-31 21:16:30 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (16.0ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `image_url' for nil:NilClass):
+     8:     </div>
+     9: 
+    10:  
+    11:         <%= image_tag p.object.image_url(:image) %>
+    12:   
+    13:     <div>
+    14:         <%= p.label 'Titulo del Post' %>
+  
+app/views/publicaciones/edit.html.erb:11:in `block in _app_views_publicaciones_edit_html_erb__3533101862090570494_69987434751360'
+app/views/publicaciones/edit.html.erb:3:in `_app_views_publicaciones_edit_html_erb__3533101862090570494_69987434751360'
+Started GET "/publicaciones/3/edit" for 127.0.0.1 at 2017-07-31 21:16:53 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (14.6ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `image_url' for nil:NilClass):
+     8:     </div>
+     9: 
+    10:  
+    11:         <%= image_tag p.object.image_url(:imagen) %>
+    12:   
+    13:     <div>
+    14:         <%= p.label 'Titulo del Post' %>
+  
+app/views/publicaciones/edit.html.erb:11:in `block in _app_views_publicaciones_edit_html_erb__3533101862090570494_69987552843360'
+app/views/publicaciones/edit.html.erb:3:in `_app_views_publicaciones_edit_html_erb__3533101862090570494_69987552843360'
+Started GET "/publicaciones/3/edit" for 127.0.0.1 at 2017-07-31 21:17:05 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (710.1ms)
+Completed 500 Internal Server Error in 721ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007f4e70139a78>:0x007f4e7ef15d00>):
+     8:     </div>
+     9: 
+    10:  
+    11:         <%= image_tag f.object.image_url(:imagen) %>
+    12:   
+    13:     <div>
+    14:         <%= p.label 'Titulo del Post' %>
+  
+app/views/publicaciones/edit.html.erb:11:in `block in _app_views_publicaciones_edit_html_erb__3533101862090570494_69987556963220'
+app/views/publicaciones/edit.html.erb:3:in `_app_views_publicaciones_edit_html_erb__3533101862090570494_69987556963220'
+Started GET "/publicaciones/3/edit" for 127.0.0.1 at 2017-07-31 21:18:23 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (844.7ms)
+Completed 500 Internal Server Error in 853ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `builder' for #<#<Class:0x007f4e70139a78>:0x00558efa4e9b28>
+Did you mean?  tag_builder):
+     8:     </div>
+     9: 
+    10:  
+    11:         <%= image_tag builder.object.photo.url(:small) %>
+    12: 
+    13:         
+    14:   
+  
+app/views/publicaciones/edit.html.erb:11:in `block in _app_views_publicaciones_edit_html_erb__3533101862090570494_47036286635300'
+app/views/publicaciones/edit.html.erb:3:in `_app_views_publicaciones_edit_html_erb__3533101862090570494_47036286635300'
+Started GET "/publicaciones/3/edit" for 127.0.0.1 at 2017-07-31 21:18:44 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (13.8ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `photo' for "<object></object>":ActiveSupport::SafeBuffer):
+     8:     </div>
+     9: 
+    10:  
+    11:         <%= image_tag tag_builder.object.photo.url(:small) %>
+    12: 
+    13:         
+    14:   
+  
+app/views/publicaciones/edit.html.erb:11:in `block in _app_views_publicaciones_edit_html_erb__3533101862090570494_69987470505060'
+app/views/publicaciones/edit.html.erb:3:in `_app_views_publicaciones_edit_html_erb__3533101862090570494_69987470505060'
+Started GET "/publicaciones/3/edit" for 127.0.0.1 at 2017-07-31 21:19:08 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (892.0ms)
+Completed 500 Internal Server Error in 907ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `builder' for #<#<Class:0x007f4e70139a78>:0x007f4e7f0600e8>
+Did you mean?  tag_builder):
+     8:     </div>
+     9: 
+    10:  
+    11:         <%= image_tag builder.object.photo.url(:imagen) %>
+    12: 
+    13:         
+    14:   
+  
+app/views/publicaciones/edit.html.erb:11:in `block in _app_views_publicaciones_edit_html_erb__3533101862090570494_69987557639580'
+app/views/publicaciones/edit.html.erb:3:in `_app_views_publicaciones_edit_html_erb__3533101862090570494_69987557639580'
+Started GET "/publicaciones/3/edit" for 127.0.0.1 at 2017-07-31 21:19:45 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (8.3ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `url' for :photo:Symbol
+Did you mean?  URI):
+     8:     </div>
+     9: 
+    10:  
+    11:         <%= image_tag :photo.url(:imagen) %>
+    12: 
+    13:         
+    14:   
+  
+app/views/publicaciones/edit.html.erb:11:in `block in _app_views_publicaciones_edit_html_erb__3533101862090570494_69987510198560'
+app/views/publicaciones/edit.html.erb:3:in `_app_views_publicaciones_edit_html_erb__3533101862090570494_69987510198560'
+Started GET "/publicaciones/3/edit" for 127.0.0.1 at 2017-07-31 21:20:10 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (14.8ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `uri' for :photo:Symbol
+Did you mean?  URI):
+     8:     </div>
+     9: 
+    10:  
+    11:         <%= image_tag :photo.uri(:imagen) %>
+    12: 
+    13:         
+    14:   
+  
+app/views/publicaciones/edit.html.erb:11:in `block in _app_views_publicaciones_edit_html_erb__3533101862090570494_69987552650760'
+app/views/publicaciones/edit.html.erb:3:in `_app_views_publicaciones_edit_html_erb__3533101862090570494_69987552650760'
+Started GET "/publicaciones/3/edit" for 127.0.0.1 at 2017-07-31 21:20:25 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (11.8ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (private method `URI' called for :photo:Symbol):
+     8:     </div>
+     9: 
+    10:  
+    11:         <%= image_tag :photo.URI(:imagen) %>
+    12: 
+    13:         
+    14:   
+  
+app/views/publicaciones/edit.html.erb:11:in `block in _app_views_publicaciones_edit_html_erb__3533101862090570494_69987467191000'
+app/views/publicaciones/edit.html.erb:3:in `_app_views_publicaciones_edit_html_erb__3533101862090570494_69987467191000'
+Started GET "/" for 127.0.0.1 at 2017-07-31 21:26:05 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (765.0ms)
+Completed 200 OK in 961ms (Views: 924.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/publicaciones/3/edit" for 127.0.0.1 at 2017-07-31 21:26:10 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (87.1ms)
+Completed 500 Internal Server Error in 165ms (ActiveRecord: 2.9ms)
+
+
+  
+ActionView::Template::Error (nil is not a valid asset source):
+     8:     </div>
+     9: 
+    10:  
+    11:         <%= image_tag @imagenName %>
+    12: 
+    13:         
+    14:   
+  
+app/views/publicaciones/edit.html.erb:11:in `block in _app_views_publicaciones_edit_html_erb___2774012910737071552_70318587344660'
+app/views/publicaciones/edit.html.erb:3:in `_app_views_publicaciones_edit_html_erb___2774012910737071552_70318587344660'
+Started GET "/" for 127.0.0.1 at 2017-07-31 21:26:37 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (30.2ms)
+Completed 200 OK in 94ms (Views: 91.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/publicaciones/3/edit" for 127.0.0.1 at 2017-07-31 21:26:40 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (nil is not a valid asset source):
+     8:     </div>
+     9: 
+    10:  
+    11:         <%= image_tag @imgenName %>
+    12: 
+    13:         
+    14:   
+  
+app/views/publicaciones/edit.html.erb:11:in `block in _app_views_publicaciones_edit_html_erb___2774012910737071552_70318479685820'
+app/views/publicaciones/edit.html.erb:3:in `_app_views_publicaciones_edit_html_erb___2774012910737071552_70318479685820'
+Started GET "/publicaciones/3/edit" for 127.0.0.1 at 2017-07-31 21:27:01 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (26.6ms)
+Completed 200 OK in 114ms (Views: 105.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/publicaciones/3/edit" for 127.0.0.1 at 2017-07-31 21:27:21 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 92ms (Views: 85.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-31 21:28:03 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 95ms (Views: 91.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/publicaciones/2" for 127.0.0.1 at 2017-07-31 21:28:06 -0500
+Processing by PublicacionesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering publicaciones/show.html.erb within layouts/application
+  Rendered publicaciones/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 64ms (Views: 57.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/publicaciones/2/edit" for 127.0.0.1 at 2017-07-31 21:28:11 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (3.8ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 81ms (Views: 72.9ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/publicaciones/1/edit" for 127.0.0.1 at 2017-07-31 21:28:33 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (11.7ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (The asset "no hay" is not present in the asset pipeline.):
+     9: 
+    10: 
+    11:  
+    12:         <%= image_tag @imgName, :size => '100x100' , alt: 'Imagen vacia' %>
+    13: 
+    14: 
+    15:         
+  
+app/views/publicaciones/edit.html.erb:12:in `block in _app_views_publicaciones_edit_html_erb___2774012910737071552_70318587290680'
+app/views/publicaciones/edit.html.erb:3:in `_app_views_publicaciones_edit_html_erb___2774012910737071552_70318587290680'
+Started GET "/" for 127.0.0.1 at 2017-07-31 21:28:43 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 92ms (Views: 88.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-31 21:29:42 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (32.6ms)
+Completed 200 OK in 93ms (Views: 90.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/publicaciones/1/edit" for 127.0.0.1 at 2017-07-31 21:29:44 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (8.4ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (The asset "no hay" is not present in the asset pipeline.):
+     7:     </div>
+     8: 
+     9:     
+    10:         <%= image_tag @imgName, :size => '100x100'  %>
+    11: 
+    12: 
+    13:         
+  
+app/views/publicaciones/edit.html.erb:10:in `block in _app_views_publicaciones_edit_html_erb___2774012910737071552_70318483427180'
+app/views/publicaciones/edit.html.erb:3:in `_app_views_publicaciones_edit_html_erb___2774012910737071552_70318483427180'
+Started GET "/publicaciones/1/edit" for 127.0.0.1 at 2017-07-31 21:30:21 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (15.6ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (The asset "no hay" is not present in the asset pipeline.):
+     7:     </div>
+     8: 
+     9:     
+    10:         <%= image_tag @imgName, :size => '100x100' , alt: 'Imagen vacia' %>
+    11: 
+    12: 
+    13:         
+  
+app/views/publicaciones/edit.html.erb:10:in `block in _app_views_publicaciones_edit_html_erb___2774012910737071552_70318349313920'
+app/views/publicaciones/edit.html.erb:3:in `_app_views_publicaciones_edit_html_erb___2774012910737071552_70318349313920'
+Started GET "/publicaciones/1/edit" for 127.0.0.1 at 2017-07-31 21:30:53 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (16.1ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (The asset "no hay" is not present in the asset pipeline.):
+     7:     </div>
+     8: 
+     9:     <%begin %>
+    10:         <%= image_tag @imgName, :size => '100x100' , alt: 'Imagen vacia' %>
+    11:     <%end %>
+    12: 
+    13:         
+  
+app/views/publicaciones/edit.html.erb:10:in `block in _app_views_publicaciones_edit_html_erb___2774012910737071552_70318586755880'
+app/views/publicaciones/edit.html.erb:3:in `_app_views_publicaciones_edit_html_erb___2774012910737071552_70318586755880'
+Started GET "/publicaciones/1/edit" for 127.0.0.1 at 2017-07-31 21:31:32 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 78ms (Views: 73.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-31 21:31:36 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 88ms (Views: 84.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/publicaciones/3" for 127.0.0.1 at 2017-07-31 21:31:38 -0500
+Processing by PublicacionesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering publicaciones/show.html.erb within layouts/application
+  Rendered publicaciones/show.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 56ms (Views: 49.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/publicaciones/3/edit" for 127.0.0.1 at 2017-07-31 21:31:43 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 78ms (Views: 73.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-31 21:33:28 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (34.1ms)
+Completed 200 OK in 103ms (Views: 100.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/publicaciones/3/edit" for 127.0.0.1 at 2017-07-31 21:33:30 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (56.1ms)
+Completed 200 OK in 126ms (Views: 119.2ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/publicaciones/3" for 127.0.0.1 at 2017-07-31 21:34:58 -0500
+Processing by PublicacionesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CJt/j1k4bjcdFJveWntGfDQ9XKiE5/nMmC4mcs1YI4kEYovcGHlKt/Y0pg8WrooMax1KAEiJdMi2oEO+J8rjpA==", "postEdit"=>{"titulo"=>"post1", "imagen"=>#<ActionDispatch::Http::UploadedFile:0x0055778c466668 @tempfile=#<Tempfile:/tmp/RackMultipart20170731-32519-1j8fsgc.jpeg>, @original_filename="v5.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"postEdit[imagen]\"; filename=\"v5.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "autor"=>"Aldo", "cuerpo"=>"este es el cuerpo", "fecha"=>"2017-07-31"}, "commit"=>"Guardar", "id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.5ms)[0m  [1m[33mUPDATE "posts" SET "imagen" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["imagen", "#<ActionDispatch::Http::UploadedFile:0x0055778c466668>"], ["updated_at", "2017-08-01 02:34:58.538612"], ["id", 3]]
+  [1m[35m (144.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 164ms (ActiveRecord: 148.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-31 21:34:58 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (136.0ms)
+Completed 200 OK in 191ms (Views: 188.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/publicaciones/3/edit" for 127.0.0.1 at 2017-07-31 21:35:11 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 94ms (Views: 87.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-31 21:37:35 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (94.8ms)
+Completed 200 OK in 174ms (Views: 157.2ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/publicaciones/1/edit" for 127.0.0.1 at 2017-07-31 21:37:38 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 74ms (Views: 68.2ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/publicaciones/1" for 127.0.0.1 at 2017-07-31 21:37:51 -0500
+Processing by PublicacionesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oOqeJt58J8/SfHNptLo6/RteFqEvqs/ClkWd4uSlSgrklygXg2W+awW9Y/CJva/+5/dZsiLbimfkrcdsmpHYLA==", "postEdit"=>{"titulo"=>"hola post", "imagen"=>#<ActionDispatch::Http::UploadedFile:0x007fe888588d38 @tempfile=#<Tempfile:/tmp/RackMultipart20170731-32519-1uc6ep1.jpeg>, @original_filename="baner.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"postEdit[imagen]\"; filename=\"baner.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "autor"=>"alfredo", "cuerpo"=>"Hoy es mi cumpleaños!", "fecha"=>"2017-01-21"}, "commit"=>"Guardar", "id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/publicaciones_controller.rb:37:in `update'
+Started PATCH "/publicaciones/1" for 127.0.0.1 at 2017-07-31 21:38:30 -0500
+Processing by PublicacionesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oOqeJt58J8/SfHNptLo6/RteFqEvqs/ClkWd4uSlSgrklygXg2W+awW9Y/CJva/+5/dZsiLbimfkrcdsmpHYLA==", "postEdit"=>{"titulo"=>"hola post", "imagen"=>#<ActionDispatch::Http::UploadedFile:0x0055778d8de898 @tempfile=#<Tempfile:/tmp/RackMultipart20170731-32519-gkc4z6.jpeg>, @original_filename="baner.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"postEdit[imagen]\"; filename=\"baner.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "autor"=>"alfredo", "cuerpo"=>"Hoy es mi cumpleaños!", "fecha"=>"2017-01-21"}, "commit"=>"Guardar", "id"=>"1"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 111ms (ActiveRecord: 8.3ms)
+
+
+  
+NoMethodError (undefined method `image=' for #<Post:0x0055778efa7c50>
+Did you mean?  imagen=
+               imagen
+               imagen?):
+  
+app/controllers/publicaciones_controller.rb:38:in `update'
+Started PATCH "/publicaciones/1" for 127.0.0.1 at 2017-07-31 21:38:53 -0500
+Processing by PublicacionesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oOqeJt58J8/SfHNptLo6/RteFqEvqs/ClkWd4uSlSgrklygXg2W+awW9Y/CJva/+5/dZsiLbimfkrcdsmpHYLA==", "postEdit"=>{"titulo"=>"hola post", "imagen"=>#<ActionDispatch::Http::UploadedFile:0x007fe898b53460 @tempfile=#<Tempfile:/tmp/RackMultipart20170731-32519-167cz0j.jpeg>, @original_filename="baner.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"postEdit[imagen]\"; filename=\"baner.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "autor"=>"alfredo", "cuerpo"=>"Hoy es mi cumpleaños!", "fecha"=>"2017-01-21"}, "commit"=>"Guardar", "id"=>"1"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "posts" SET "imagen" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["imagen", "#<ActionDispatch::Http::UploadedFile:0x007fe898b53460>"], ["updated_at", "2017-08-01 02:38:53.739009"], ["id", 1]]
+  [1m[35m (125.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 224ms (ActiveRecord: 132.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-31 21:38:53 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (41.1ms)
+Completed 200 OK in 130ms (Views: 124.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/publicaciones/1/edit" for 127.0.0.1 at 2017-07-31 21:38:58 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 125ms (Views: 117.4ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/publicaciones/1" for 127.0.0.1 at 2017-07-31 21:39:08 -0500
+Processing by PublicacionesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CSMgSshlgGiCHPAgPpO1myAFCSKjkgvuuhOjgnSx7QxNXpZ7lXwZzFXd4LkDlCCY3KxGMa7jTkvI+/kMCoV/Kg==", "postEdit"=>{"titulo"=>"hola post", "imagen"=>#<ActionDispatch::Http::UploadedFile:0x007fe8a028d9b8 @tempfile=#<Tempfile:/tmp/RackMultipart20170731-32519-1ekgt6e.jpeg>, @original_filename="baner.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"postEdit[imagen]\"; filename=\"baner.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "autor"=>"alfredo", "cuerpo"=>"Hoy es mi cumpleaños!", "fecha"=>"2017-01-21"}, "commit"=>"Guardar", "id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "posts" SET "imagen" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["imagen", "#<ActionDispatch::Http::UploadedFile:0x007fe8a028d9b8>"], ["updated_at", "2017-08-01 02:39:08.021549"], ["id", 1]]
+  [1m[35m (116.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 130ms (ActiveRecord: 117.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-31 21:39:08 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (35.1ms)
+Completed 200 OK in 97ms (Views: 93.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/publicaciones/6/edit" for 127.0.0.1 at 2017-07-31 21:39:14 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 108ms (Views: 101.8ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/publicaciones/6" for 127.0.0.1 at 2017-07-31 21:39:24 -0500
+Processing by PublicacionesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yn8UKjF4ePVO/OrUzSlYdJ11H4+9g7d8dAC8soonr4lRlpSuVAnmjI4pqB3UnHamyocQxUN49uLHOtsL0BO3CQ==", "postEdit"=>{"titulo"=>"Cuerto post", "imagen"=>#<ActionDispatch::Http::UploadedFile:0x007fe8981418c8 @tempfile=#<Tempfile:/tmp/RackMultipart20170731-32519-5y99ux.jpeg>, @original_filename="v2.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"postEdit[imagen]\"; filename=\"v2.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "autor"=>"frodo", "cuerpo"=>"post 4", "fecha"=>"2017-07-26"}, "commit"=>"Guardar", "id"=>"6"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.2ms)[0m  [1m[33mUPDATE "posts" SET "imagen" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["imagen", "#<ActionDispatch::Http::UploadedFile:0x007fe8981418c8>"], ["updated_at", "2017-08-01 02:39:24.116835"], ["id", 6]]
+  [1m[35m (196.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 220ms (ActiveRecord: 200.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-31 21:39:24 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (31.6ms)
+Completed 200 OK in 132ms (Views: 128.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-31 21:40:07 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (58.8ms)
+Completed 200 OK in 115ms (Views: 100.8ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-31 21:40:13 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 68ms (Views: 64.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/publicaciones/1" for 127.0.0.1 at 2017-07-31 21:40:16 -0500
+Processing by PublicacionesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering publicaciones/show.html.erb within layouts/application
+  Rendered publicaciones/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 55ms (Views: 49.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/publicaciones/1/edit" for 127.0.0.1 at 2017-07-31 21:40:18 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (23.7ms)
+Completed 200 OK in 111ms (Views: 103.0ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/publicaciones/1" for 127.0.0.1 at 2017-07-31 21:40:27 -0500
+Processing by PublicacionesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TsoyRbA2lCdgmhUKO4dUeYCkRhhXJkEJb6jOwPknHcAKt4R07S8Ng7dbBZMGgMF6fA0JC1pXBKwdQJROhxOP5g==", "postEdit"=>{"titulo"=>"hola post", "imagen"=>#<ActionDispatch::Http::UploadedFile:0x007fe8886b92e8 @tempfile=#<Tempfile:/tmp/RackMultipart20170731-32519-j039h1.jpeg>, @original_filename="v1.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"postEdit[imagen]\"; filename=\"v1.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "autor"=>"alfredo", "cuerpo"=>"Hoy es mi cumpleaños!", "fecha"=>"2017-01-21"}, "commit"=>"Guardar", "id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[33mUPDATE "posts" SET "imagen" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["imagen", "#<ActionDispatch::Http::UploadedFile:0x007fe8886b92e8>"], ["updated_at", "2017-08-01 02:40:27.454092"], ["id", 1]]
+  [1m[35m (417.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 430ms (ActiveRecord: 419.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-31 21:40:27 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (26.7ms)
+Completed 200 OK in 84ms (Views: 76.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/publicaciones/2/edit" for 127.0.0.1 at 2017-07-31 21:41:38 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 134ms (Views: 82.7ms | ActiveRecord: 5.7ms)
+
+
+Started PATCH "/publicaciones/2" for 127.0.0.1 at 2017-07-31 21:41:46 -0500
+Processing by PublicacionesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BgKVo8Zk9DMGZknYDdE8KubrqbGmSbu564hfKSnvQT+RPfNgXKlBDvESU9viPYXb/u5BuUnnXnml5GIONjKIlA==", "postEdit"=>{"titulo"=>"post 0", "imagen"=>#<ActionDispatch::Http::UploadedFile:0x0055778c3e07c0 @tempfile=#<Tempfile:/tmp/RackMultipart20170731-32519-1soty4v.jpeg>, @original_filename="v5.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"postEdit[imagen]\"; filename=\"v5.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "autor"=>"yo", "cuerpo"=>"este es un cuerpo de publicacion", "fecha"=>"2017-07-31"}, "commit"=>"Guardar", "id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.2ms)[0m  [1m[33mUPDATE "posts" SET "imagen" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["imagen", "#<ActionDispatch::Http::UploadedFile:0x0055778c3e07c0>"], ["updated_at", "2017-08-01 02:41:46.115515"], ["id", 2]]
+  [1m[35m (94.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 115ms (ActiveRecord: 97.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-31 21:41:46 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 74ms (Views: 70.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/publicaciones/1/edit" for 127.0.0.1 at 2017-07-31 21:44:00 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 124ms (Views: 64.2ms | ActiveRecord: 6.0ms)
+
+
+Started PATCH "/publicaciones/1" for 127.0.0.1 at 2017-07-31 21:44:09 -0500
+Processing by PublicacionesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SMvEvKuyQZla2IKhRVsGPRKCOm2SV4BwWhIYj/OenDcMtnKN9qvYPY0Zkjh4XJM+7it1fp8mxdUo+kIBjaoOEQ==", "postEdit"=>{"titulo"=>"hola post", "imagen"=>#<ActionDispatch::Http::UploadedFile:0x007fe8a545eda0 @tempfile=#<Tempfile:/tmp/RackMultipart20170731-32519-iytf5w.jpeg>, @original_filename="v1.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"postEdit[imagen]\"; filename=\"v1.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "autor"=>"alfredo", "cuerpo"=>"Hoy es mi cumpleaños!", "fecha"=>"2017-01-21"}, "commit"=>"Guardar", "id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (7.0ms)[0m  [1m[33mUPDATE "posts" SET "imagen" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["imagen", "#<ActionDispatch::Http::UploadedFile:0x007fe8a545eda0>"], ["updated_at", "2017-08-01 02:44:09.059787"], ["id", 1]]
+  [1m[35m (227.1ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 259ms (ActiveRecord: 234.7ms)
+
+
+  
+NoMethodError (undefined method `original_filename' for "#<ActionDispatch::Http::UploadedFile:0x007fe8a545eda0>":String):
+  
+app/controllers/publicaciones_controller.rb:40:in `update'
+Started GET "/" for 127.0.0.1 at 2017-07-31 21:48:15 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (55.5ms)
+Completed 200 OK in 108ms (Views: 100.9ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/publicaciones/2/edit" for 127.0.0.1 at 2017-07-31 21:48:18 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (22.8ms)
+Completed 200 OK in 99ms (Views: 84.3ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/publicaciones/2" for 127.0.0.1 at 2017-07-31 21:48:28 -0500
+Processing by PublicacionesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P/6hbfjQ01KtaY7Tzgc2LKOjoWLatuwGyhOTtrPcOzKowceuYh1mb1odlNAh64/du6ZJajUYCcaEf66RrAHymQ==", "postEdit"=>{"titulo"=>"post 0", "imagen"=>#<ActionDispatch::Http::UploadedFile:0x007fe8883e6408 @tempfile=#<Tempfile:/tmp/RackMultipart20170731-32519-zv4xof.jpeg>, @original_filename="v2.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"postEdit[imagen]\"; filename=\"v2.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "autor"=>"yo", "cuerpo"=>"este es un cuerpo de publicacion", "fecha"=>"2017-07-31"}, "commit"=>"Guardar", "id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `original_filename' for :imagen:Symbol):
+  
+app/controllers/publicaciones_controller.rb:48:in `permitirParametrosEdit'
+app/controllers/publicaciones_controller.rb:37:in `update'
+Started PATCH "/publicaciones/2" for 127.0.0.1 at 2017-07-31 21:49:42 -0500
+Processing by PublicacionesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P/6hbfjQ01KtaY7Tzgc2LKOjoWLatuwGyhOTtrPcOzKowceuYh1mb1odlNAh64/du6ZJajUYCcaEf66RrAHymQ==", "postEdit"=>{"titulo"=>"post 0", "imagen"=>#<ActionDispatch::Http::UploadedFile:0x007fe888986ed0 @tempfile=#<Tempfile:/tmp/RackMultipart20170731-32519-39d3zs.jpeg>, @original_filename="v2.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"postEdit[imagen]\"; filename=\"v2.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "autor"=>"yo", "cuerpo"=>"este es un cuerpo de publicacion", "fecha"=>"2017-07-31"}, "commit"=>"Guardar", "id"=>"2"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.3ms)[0m  [1m[33mUPDATE "posts" SET "imagen" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["imagen", "#<ActionDispatch::Http::UploadedFile:0x007fe888986ed0>"], ["updated_at", "2017-08-01 02:49:42.303731"], ["id", 2]]
+  [1m[35m (126.5ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 196ms (ActiveRecord: 131.8ms)
+
+
+  
+NoMethodError (undefined method `original_filename' for "#<ActionDispatch::Http::UploadedFile:0x007fe888986ed0>":String):
+  
+app/controllers/publicaciones_controller.rb:38:in `update'
+Started GET "/" for 127.0.0.1 at 2017-07-31 22:02:28 -0500
+Processing by PublicacionesController#index as HTML
+  Rendering publicaciones/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered publicaciones/index.html.erb within layouts/application (63.7ms)
+Completed 200 OK in 118ms (Views: 110.2ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/publicaciones/1/edit" for 127.0.0.1 at 2017-07-31 22:02:30 -0500
+Processing by PublicacionesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (3.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering publicaciones/edit.html.erb within layouts/application
+  Rendered publicaciones/edit.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 77ms (Views: 67.0ms | ActiveRecord: 3.4ms)
+
+
+Started PATCH "/publicaciones/1" for 127.0.0.1 at 2017-07-31 22:02:40 -0500
+Processing by PublicacionesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EB24gOsUUaZXCbfWcmveOK1+BishGB3nFis6Bg0t0l9UYA6xtg3IAoDIp09PbEs7UddJOCxpWEJkw2CIcxlAeQ==", "postEdit"=>{"titulo"=>"hola post", "imagen"=>#<ActionDispatch::Http::UploadedFile:0x007fe899264740 @tempfile=#<Tempfile:/tmp/RackMultipart20170731-32519-tiljo.jpeg>, @original_filename="v6.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"postEdit[imagen]\"; filename=\"v6.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "autor"=>"alfredo", "cuerpo"=>"Hoy es mi cumpleaños!", "fecha"=>"2017-01-21"}, "commit"=>"Guardar", "id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.3ms)[0m  [1m[33mUPDATE "posts" SET "imagen" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["imagen", "#<ActionDispatch::Http::UploadedFile:0x007fe899264740>"], ["updated_at", "2017-08-01 03:02:40.452613"], ["id", 1]]
+  [1m[35m (132.2ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 150ms (ActiveRecord: 135.1ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/publicaciones_controller.rb:42:in `update'
+Started PATCH "/publicaciones/1" for 127.0.0.1 at 2017-07-31 22:03:46 -0500
+  
+SyntaxError (/home/frodo/Documentos/Rails/BlogSn/app/controllers/publicaciones_controller.rb:44: syntax error, unexpected tIDENTIFIER, expecting ')'
+    redirect_to index_path
+               ^):
+  
+app/controllers/publicaciones_controller.rb:44: syntax error, unexpected tIDENTIFIER, expecting ')'
