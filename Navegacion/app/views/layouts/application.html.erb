@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> <%= @lugar %> </title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+<nav class='navbar navbar-default'>
+    <div class='container-fluid'>
+      <div class ='navbar-header'>
+
+  <% if @casa == true %>
+     <%= link_to 'Alemania',alemania_url , class:  "btn btn-default navbar-btn" %> 
+        <%= link_to 'Argentina', argentina_url, class: "btn btn-default navbar-btn" %> 
+        <%= link_to 'Mexico', mexico_url, class: "btn btn-default navbar-btn" %> 
+        <%= link_to 'Atras', :back, class: 'btn btn-default navbar-btn'%>
+        <%= link_to 'Paices',:root ,class: 'navbar-brand'%>
+  <% else %>
+     <%= link_to 'Alemania',alemania_url , class:  "btn btn-default navbar-btn" %> 
+        <%= link_to 'Argentina', argentina_url, class: "btn btn-default navbar-btn" %> 
+        <%= link_to 'Mexico', mexico_url, class: "btn btn-default navbar-btn" %> 
+        <%= link_to 'Atras', :back, class: 'btn btn-default navbar-btn'%>
+        <%= link_to 'Casa', :root, class: 'btn btn-default navbar-btn' %>  
+        <%= link_to 'Paices',:root ,class: 'navbar-brand'%>
+  <%end%>
+      </div>
+    </div>  
+  </nav>
+    <%= yield %>
+  </body>
+</html>

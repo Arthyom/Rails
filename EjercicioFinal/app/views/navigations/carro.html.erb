@@ -1,0 +1,22 @@
+<div class='jumbotron'>
+    <h3>Bienvenido al Carrito de Compras, estos son sus productos</h2>
+</div>
+<table border = '1' class='table table-bordered table-striped'>
+<tr>
+    <th>Nombre</th>
+    <th>Precio</th>
+    <th>Existencia</th>
+</tr>
+    <%precio = 0 %>
+    <% @carro.contenido.each do |p| %>
+        <% precio += p.precio %>
+        <tr>
+            <td><%= p.nombre %></td>
+            <td><%= p.precio %></td>
+            <td><%= p.existencia %></td>
+        </tr>
+    <%end%>
+</table>
+<h2>Total a pagar $ <%= precio.round(2)  %></h2>
+<%= button_to 'VaciarCarrito', vaciarCarro_url, :method=>:post, data:{confirm:'Desea Vaciar Carro?'}  %>
+<%= button_to 'Seguir Comprando', navigations_path , :method=>:get, data:{confirm:'Desea Salir?'} %>

@@ -1,0 +1,20 @@
+<div class='jumbotron'>
+    <h3>Lista de productos</h3>
+</div>
+
+<table border ='1' class='table table-bordered table-striped'>
+    <tr>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Existencia</th>
+        <th>Opciones</th>
+    </tr>
+<% @listaProductos.each do |p|  %>
+    <tr>
+        <td><%= p.nombre %></td>
+        <td><%= p.precio %></td>
+        <td><%= p.existencia %></td>
+        <td><%= link_to 'Agragar A Carrito', addCar_path(p), method: :post, class: 'btn btn-lg btn-success' %> </td>
+    </tr>
+<%end  %>
+</table>
