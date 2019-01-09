@@ -1,4 +1,7 @@
 class ImagesController < ApplicationController
+    
+    before_action :find_image, only: [:edit, :update, :show, :destroy]
+
     def index
         @images = Image.all 
     end
@@ -8,16 +11,19 @@ class ImagesController < ApplicationController
     end
 
     def edit
-        @image = Image.find(params[:id])
     end
 
     def update
-        @image = Image.find params[:id]
-        @image.update = image_params
+        @image.update image_params
         redirect_to @image
     end
+
+    def destroy
+        @image.destroy
+        redirect_to images_path
+    end
+
     def show
-        @image = Image.find params[:id]
     end
 
     def create
@@ -30,6 +36,10 @@ class ImagesController < ApplicationController
     
     def image_params
         params.require(:image).permit(:description)
+    end
+
+    def find_image
+        @image = Image.find params[:id]
     end
 
 
