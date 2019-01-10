@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= @titulo %></title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body >
+ 
+    <img class="img-responsive" src="https://pcx.com.ph/wp-content/uploads/2016/04/1100-x-200-asus-Gx700-1.jpg">
+  
+  
+  <nav class ='navbar navbar-inverse p'>
+    <div class='container'>
+      <div class='navbar-header'>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+           <%= link_to 'Tienda', :root, :class => 'navbar-brand' %>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+        <ul class='nav navbar-nav'>
+          <li class='active'><%= link_to 'Quienes Somos', quienes_url %></li>
+          <li class='active'><%= link_to 'Contactanos', contacto_url %></li>
+          <% if session[:carrito] %>
+            <li class='active'><%= link_to 'Carrito',carro_url %></li>
+          <%end %>
+          <li class='active'><%= link_to 'Atras', :back %></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+
+    <div class='container'>
+    <%= yield %>
+    </div>
+  </body>
+</html>

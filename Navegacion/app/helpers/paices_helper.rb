@@ -1,0 +1,2 @@
+module PaicesHelper
+end

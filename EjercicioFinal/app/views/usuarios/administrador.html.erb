@@ -1,0 +1,24 @@
+<div class='jumbotron'>
+    <h3>Bienvenido Al Panel de Administrador</h3>
+</div>
+
+<table border ='1' class='table table-bordered table-striped' >
+    <tr>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Existencia</th>
+        <th colspan='2'>Opciones</th>
+    </tr>
+<% @listaProductos.each do |p|  %>
+    <tr>
+        <td><%= p.nombre %></td>
+        <td><%= p.precio %></td>
+        <td><%= p.existencia %></td>
+        <td><%= link_to 'Editar',edit_usuario_path(p), class:'btn btn-lg btn-warning' %> 
+        <%= link_to 'Eliminar', usuario_path(p), class: 'btn btn-lg btn-danger',
+            :method => :delete, :data=>{:confirm=> 'Desea Eliminar Este Producto?'}%> </td>
+    </tr>
+<%end  %>
+</table>
+
+<td><%= link_to 'Nuevo Producto', new_usuario_path(p), class:'btn btn-lg btn-primary' %> </td>
