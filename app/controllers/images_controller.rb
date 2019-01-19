@@ -3,7 +3,7 @@ class ImagesController < ApplicationController
     before_action :find_image, only: [:edit, :update, :show, :destroy]
 
     def index
-        @images = Image.all 
+        @images = Image.where user_id: current_user.id
     end
 
     def new 
@@ -27,9 +27,9 @@ class ImagesController < ApplicationController
     end
 
     def create
-        @image = Image.new image_params
+       @image = current_user.images.new image_params
        if @image.save
-        return redirect_to @images_path
+        return redirect_to images_path
        end
        render :new
     end
