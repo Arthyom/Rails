@@ -4,8 +4,8 @@
   
   <figcaption class="figure-caption">
      <%= image.description %> 
-     <%= link_to 'Edit', edit_image_path(image)%>
-     <%= link_to 'Delete',image, method: :delete,
+     <%= link_to t('.edit_link'), edit_image_path(image)%>
+     <%= link_to t('.remove_link'),image, method: :delete,
           data:{confirm: 'Are you sure?'} %>
   </figcaption>
 </figure>

@@ -1,0 +1,6 @@
+<% if user_signed_in? %>
+    <h1>Bienvenido <%= current_user.name %></h1>
+    <h2>Bienvenido <%= current_user.email %></h2>
+<%else%>
+    <h1> RailsGram</h1>
+<%end%>
